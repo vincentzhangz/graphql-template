@@ -1,29 +1,36 @@
-<h1 align="center">GraphQL Template</h1>
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
-  <img alt="David" src="https://img.shields.io/david/vincentzhangz/graphql-template">
-  <a href="#" target="_blank">
-    <img alt="License: ISC" src="https://img.shields.io/badge/License-ISC-yellow.svg" />
-  </a>
-</p>
+# GraphQL Template
 
-> Basic GraphQL server with JWT Authentication and MongoDB as database
+### Basic GraphQL server using [GraphQL Nexus](https://github.com/graphql-nexus/nexus) 🚀.
 
-## Install
+## Usage
+
+#### 1. Install the dependencies
 
 ```sh
 npm install
 ```
 
-## Usage
+#### 2. Setup the PostgreSQL database (using Docker)
 
 ```sh
-npm run start
+docker run --detach --publish 5432:5432 -e POSTGRES_PASSWORD=postgres --name postgres postgres:13
 ```
 
-## Author
+#### 3. Start the server
 
-👤 **Vincent**
+To interact with the API in a GraphQL Playground, all you need to do is execute the `dev` script defined in the
+package.json:
 
-* Website: vincentzhangz.com
-* Github: [@vincentzhangz](https://github.com/vincentzhangz)
+```sh
+npm run dev
+```
+
+#### 4. Run the tests
+
+```sh
+npm run test
+```
+
+## Documentation
+
+You can find the docs for Nexus [here](http://nexusjs.org/).

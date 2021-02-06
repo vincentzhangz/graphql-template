@@ -1,6 +1,5 @@
 .idea
 node_modules
-*.iml
-out
-gen
 .env
+nexus-typegen.ts
+schema.graphql
