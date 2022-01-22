@@ -36,7 +36,7 @@
     "get-port": "^5.1.1",
     "graphql-request": "^3.4.0",
     "jest": "^26.6.3",
-    "nanoid": "^3.1.20",
+    "nanoid": "^3.1.31",
     "pg": "^8.5.1",
     "ts-jest": "^26.5.0",
     "ts-node-dev": "^1.1.1",
